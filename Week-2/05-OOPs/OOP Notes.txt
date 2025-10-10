@@ -1,0 +1,40 @@
+
+Member Inheritance
+------------------
+• Classical
+• Prototypal
+• Deep copy
+• Mixin
+
+Creating Objects with a Constructor
+-----------------------------------
+
+Constructors are functions invoked with the new operator. 
+
+Unlike typical functions, constructors are named in upper camel case to indicate that new is required. 
+Omitting new for a constructor adds members to the global window object, which would not be good.
+
+So, anyway, when you invoke a constructor with new, JavaScript creates a private variable named
+this, which contains an empty object for you to add members to. Whereas functions implicitly return
+undefined, constructors implicitly return this. 
+So you don’t have to create a private this variable in the
+body of the constructor or explicitly write a return statement. JavaScript does that for you.
+body of the constructor or explicitly write a return statement. JavaScript does that for you.
+
+That’s really nice. But even better, this inherits any members you add to the constructor’s prototype
+object
+_______________________________________________________________
+
+Classical Inheritance
+---------------------
+
+if we have some object that has some desirable members, 
+we can take that object and add other members to it to create another kind of object. 
+
+The new object is based on the old one and has all the members of the old one, in
+addition to all the new ones we have added. 
+This means we can place useful common members in one object and then base other, more specialized, objects on it, as well as make more specialized versions of
+useful objects in our code. 
+
+The feature in JavaScript to do this is called inheritance, because the new
+object inherits the members of the old object.

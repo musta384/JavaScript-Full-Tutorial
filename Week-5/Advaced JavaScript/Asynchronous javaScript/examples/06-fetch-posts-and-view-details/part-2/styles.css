@@ -1,0 +1,75 @@
+.loading-indicator {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ffcccc;
+  background: #fff5f5;
+  border-radius: 5px;
+}
+
+.retry-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.retry-btn:hover {
+  background: #0056b3;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.post {
+  background-color: cadetblue;
+  cursor: pointer;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.post:hover {
+  background-color: #f8f9fa;
+}
+
+.details {
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background: #f8f9fa;
+  margin-top: 20px;
+}

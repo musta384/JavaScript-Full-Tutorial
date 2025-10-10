@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combining multiple promises</title>
+</head>
+
+<body>
+  <div>
+    <h2>Combining multiple promises</h2>
+    <p>Sometimes, you need all the promises to be fulfilled, but they don't depend on each other. In a case like that,
+      it's
+      much more efficient to start them all off together, then be notified when they have all fulfilled. The
+      <strong>Promise.all()</strong>
+      method is what you need here. It takes an array of promises and returns a single promise.
+    </p>
+    <p>The promise returned by Promise.all() is:</p>
+    <ul>
+      <li><strong>fulfilled</strong> when and if all the promises in the array are fulfilled. In this case, the then()
+        handler is called
+        with an
+        array of all the responses, in the same order that the promises were passed into all().
+      </li>
+      <li>
+        <strong>rejected</strong> when and if any of the promises in the array are rejected. In this case, the catch()
+        handler is called
+        with the
+        error thrown by the promise that rejected.
+      </li>
+    </ul>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

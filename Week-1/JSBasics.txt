@@ -1,0 +1,159 @@
+Day 1–2: The Basics
+
+  1. What is JavaScript?
+
+  JavaScript is a high-level, interpreted programming language that makes web pages interactive. 
+      It runs on the client-side (in the user's web browser) and, thanks to Node.js, on the server-side as well.
+
+  Runtime: The environment where JavaScript code is executed. 
+          The browser (Chrome's V8, Firefox's SpiderMonkey) is the most common runtime.
+
+  Node.js: A runtime that allows you to run JavaScript on a server or your local machine, 
+          outside of a browser. It's built on Chrome's V8 engine.
+
+  2. Variables (let, const, var)
+
+  Variables are containers for storing data values.
+
+  var: The old way of declaring variables (ES5 and earlier). 
+      It is function-scoped and can be redeclared and updated.
+
+  let (ES6+): The modern way for variables that can change. 
+              It is block-scoped and can be updated but not redeclared within its scope.
+
+  const (ES6+): Used for variables that should not be reassigned. 
+              It is block-scoped and must be initialized at declaration. 
+              The value it holds is constant, but if it's an object or array, 
+              the contents of that object or array can change (it's not immutable).
+
+  Best Practice: Prefer const by default. Use let when you know the value needs to change. 
+                Avoid var in modern code.
+            
+
+  3. Data Types
+
+  JavaScript has dynamic types; a variable can hold different types of values.
+
+  Primitive Types: Immutable (cannot be changed).
+
+    String: Text, e.g., "Hello World"
+
+    Number: Integers and floats, e.g., 42, 3.14
+
+    Boolean: true or false
+
+    undefined: A declared variable that hasn't been assigned a value.
+
+    null: Represents the intentional absence of any object value.
+
+    Symbol (ES6): A unique and immutable value, often used as object property keys.
+
+  Object Type: A collection of key-value pairs. (We'll cover this in Week 2).
+
+
+  4. Type Conversion & Coercion
+
+    Conversion: Manually changing a value from one type to another.
+
+    Coercion: JavaScript automatically converting types behind the scenes 
+            (often in operations using ==, +, if statements).
+
+  Exercise 1:
+
+    1. Declare a constant pi with the value 3.14159.
+
+    2. Declare a variable radius and assign it a number.
+
+    3. Calculate the area of a circle (pi * radius²) and store it in a variable named area. Log the result to the console.
+
+    4. Try changing pi to a new number. What happens? Why?
+
+
+Day 3–4: Logic and Flow
+
+  1. Operators
+
+    a) Arithmetic: +, -, *, /, % (modulus/remainder), ** (exponentiation)
+
+    b) Assignment: =, +=, -=, *=, /=
+
+    c) Comparison: >, <, >=, <=, == (avoid), === (strict equality), != (avoid), !== (strict inequality)
+
+    d) Logical: && (and), || (or), ! (not)
+
+
+  2. Control Structures: if, else if, switch
+
+  Control the flow of execution based on conditions.
+  Switch statements are used if all paths depend on the value of the same expression and if that expression
+  returns a string or number.
+
+  3. Loops
+
+  Execute a block of code multiple times.
+
+    for: Best when you know how many times to iterate.
+
+    while: Best when you don't know how many times, but have a condition.
+
+    do..while: Runs the code block at least once, then checks the condition.
+
+    for..of (ES6): Loops over iterable objects (like arrays, strings).
+
+    for..in: Loops over the enumerable properties of an object. (Use with caution, as it iterates over inherited properties).
+
+
+  Exercise 2: FizzBuzz
+
+  Write a program that prints numbers from 1 to 100.
+
+      For multiples of 3, print "Fizz" instead of the number.
+
+      For multiples of 5, print "Buzz".
+
+      For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+
+
+Day 5–7: Functions
+
+  1. Function Declarations, Expressions, Arrow Functions
+
+      Declaration: Function is hoisted (can be called before it's defined).
+
+      Expression: Function is stored in a variable. Not hoisted.
+
+      Arrow Function (ES6): Shorter syntax and doesn't have its own this context (more on this later).
+
+  
+  2. Parameters & Default Parameters (ES6)
+
+  Parameters are variables listed in the function's definition. 
+  Arguments are the actual values passed to the function. 
+  You can set default values for parameters.
+
+  3. Scope
+
+  Scope determines the accessibility (visibility) of variables.
+
+    Global Scope: Declared outside any function. Accessible everywhere.
+
+    Function Scope: var is function-scoped. Accessible only within the function it is declared in.
+
+    Block Scope (ES6): let and const are block-scoped. 
+              Accessible only within the {} block (e.g., in an if statement or for loop) they are declared in.
+
+
+  4. Hoisting
+  JavaScript's default behavior of moving declarations to the top of their scope.
+
+    var declarations are hoisted and initialized with undefined.
+
+    let and const are hoisted but not initialized (Temporal Dead Zone). You cannot use them before declaration.
+
+    Function declarations are hoisted and can be called before they are defined.
+
+
+  ✅ Week 1 Mini-Projects
+
+  Simple Calculator:
+  Temperature Converter:

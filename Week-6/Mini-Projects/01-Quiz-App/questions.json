@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the output of 'typeof null' in JavaScript?",
+    "options": [
+      "'object'",
+      "'null'",
+      "'undefined'",
+      "'number'"
+    ],
+    "answer": "'object'"
+  },
+  {
+    "question": "Which method is used to parse a JSON string in JavaScript?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "parse.JSON()",
+      "stringify.JSON()"
+    ],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "Which of the following is NOT a JavaScript data type?",
+    "options": [
+      "Boolean",
+      "Undefined",
+      "Float",
+      "String"
+    ],
+    "answer": "Float"
+  }
+]

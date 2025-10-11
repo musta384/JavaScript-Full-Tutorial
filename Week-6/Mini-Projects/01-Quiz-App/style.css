@@ -1,0 +1,48 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #667eea, #764ba2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+button.correct {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button.wrong {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#next-btn {
+  margin-top: 1rem;
+}
